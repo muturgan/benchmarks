@@ -2,7 +2,7 @@
   "name": "fastify-benchmarks",
   "version": "1.0.0",
   "description": "Benchmarks for Fastify, a fast and low-overhead web framework.",
-  "main": "index.js",
+  "main": "benchmark.js",
   "scripts": {
     "build": "tsc",
     "start": "node benchmark.js",
@@ -24,6 +24,10 @@
   ],
   "license": "MIT",
   "dependencies": {
+    "@nestjs/common": "^6.11.8",
+    "@nestjs/core": "^6.11.8",
+    "@nestjs/platform-express": "^6.11.8",
+    "@nestjs/platform-fastify": "^6.11.8",
     "autocannon": "^3.2.0",
     "autocannon-compare": "^0.3.0",
     "chalk": "^2.4.2",
@@ -39,6 +43,8 @@
     "ienoopen": "^1.0.0",
     "inquirer": "^6.2.2",
     "ora": "^3.1.0",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^6.5.4",
     "x-xss-protection": "^1.1.0"
   },
   "devDependencies": {
