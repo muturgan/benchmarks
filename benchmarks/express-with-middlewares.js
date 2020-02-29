@@ -15,8 +15,8 @@ app.use(require('hsts')())
 app.use(require('ienoopen')())
 app.use(require('x-xss-protection')())
 
-app.get('/', function (req, res) {
-  res.json({ hello: 'world' })
+app.get('/benchmarks', function (req, res) {
+  res.json({ hello: 'benchmarks' })
 })
 
 app.listen(3000)

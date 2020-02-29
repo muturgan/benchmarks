@@ -7,8 +7,8 @@ const app = express()
 app.disable('etag')
 app.disable('x-powered-by')
 
-app.get('/', function (req, res) {
-  res.json({ hello: 'world' })
+app.get('/benchmarks', function (req, res) {
+  res.json({ hello: 'benchmarks' })
 })
 
 app.listen(3000)

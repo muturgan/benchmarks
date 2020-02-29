@@ -9,9 +9,9 @@ app.disable('x-powered-by')
 
 const router = express.Router()
 
-router.get('/hello', function (req, res) {
-  res.json({ hello: 'world' })
+router.get('/benchmarks', function (req, res) {
+  res.json({ hello: 'benchmarks' })
 })
 
-app.use('/greet', router)
+app.use('/', router)
 app.listen(3000)
